@@ -6,4 +6,5 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 
 Рекомендуемая схема перевода результатов демонстрационного
 экзамена из стобалльной шкалы в пятибалльную:
-![image](https://user-images.githubusercontent.com/90219892/188391059-b6809eee-a084-4d98-af1a-11aa7b324cca.png)
+![image](https://user-images.githubusercontent.com/90219892/188391193-ec9a6adf-f16e-421f-847b-e1bd3560bebd.png)
+
