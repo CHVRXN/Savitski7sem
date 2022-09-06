@@ -47,3 +47,7 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 Плюсы: простота чтения диаграмм; понимание сути задания; 
 
 ## Use Case Diagram
+<b>Акторы</b> - пользователи
+<b>Прецеденты</b> - выполняемые действия
+
+Для построения Use Case диаграммы, необходимо открыть предметную область
