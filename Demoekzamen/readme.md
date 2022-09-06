@@ -56,3 +56,5 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
   пунктирные линие бывают: include, extend<br>
 <b>Сплошные</b> линие - линии ассоциации, отражает возможность использования актером прецедента<br>
 <b>Пунктирные линие</b> - линии включения и расширения
+![image](https://user-images.githubusercontent.com/90219892/188571959-06f74f07-84fb-4934-a1f4-f16a4ffc6653.png)
+
