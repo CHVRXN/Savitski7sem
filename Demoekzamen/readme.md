@@ -33,3 +33,13 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 Умение работать с readme.md
 
 Локал гит: http://192.168.1.20:3000/
+
+
+# Unifled Modeling Language
+<b>Теоретическая часть:</b>
+структура; теория; для чего нуже?;
+
+<b>Практическая часть:</b>
+проектирование; код; описание функций
+
+<b>UML</b> - Международный язык РИСОВАНИЯ СХЕМ
