@@ -58,3 +58,5 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 <b>Пунктирные линие</b> - линии включения и расширения
 ![image](https://user-images.githubusercontent.com/90219892/188572105-d653c8d0-fbf3-4817-bada-5269310712de.png)
 
+# ER диаграммы
+<b>ER</b> - entity-relationship - сущность-связь
