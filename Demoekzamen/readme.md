@@ -62,3 +62,4 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 <b>ER</b> - entity-relationship - сущность-связь
 
 # WFP - Основные эелементы управления, верстка
+<b>>WPF</b> - один из компонентов ядра .NET Framework - Winform - UMP
