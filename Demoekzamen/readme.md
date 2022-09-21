@@ -82,4 +82,9 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 
 <b>StackPanel</b> - распологает все элементы в ряд либо по горизонтали, либо по вертикали в зависимости от ориентации<br>
 <b>Aligment</b> - атрибут выравнивания, которые следует использовать вместо отступа (Vertical; horizontalAligment)
+<b>WrapPAnel</b> - позволяет расположить два столбца горизонтально
 
+<b>Элементы управления:</b><br>
+- TextBlock - вывод
+- TextBox - ввод
+- Button - кнопка
