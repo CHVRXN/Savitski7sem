@@ -70,3 +70,5 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 Возможность использовать элементы Winform<br>
 
 <b>WPF APP(.NET Framework)</b> - используемое WPF
+
+<b>Основные контейнеры</b> - Grid, UniformGrid, StackPanel, WarpPanel, DockPanel, Canvas
