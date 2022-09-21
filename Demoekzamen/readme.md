@@ -60,3 +60,5 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 
 # ER диаграммы
 <b>ER</b> - entity-relationship - сущность-связь
+
+# WFP - Основные эелементы управления, верстка
