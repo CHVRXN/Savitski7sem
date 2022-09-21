@@ -68,3 +68,5 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 Адаптивная верстка<br>
 Привязка данных<br>
 Возможность использовать элементы Winform<br>
+
+<b>WPF APP(.NET Framework)</b> - используемое WPF
