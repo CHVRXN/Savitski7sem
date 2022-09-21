@@ -88,3 +88,11 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 - TextBlock - вывод
 - TextBox - ввод
 - Button - кнопка
+
+Стили прописываются в App.xaml<br>
+Новый стиль - новый тег Style<br>
+![image](https://user-images.githubusercontent.com/90219892/191473071-5d567fb1-335d-4f29-9fa3-6ae55f5dc241.png)
+
+
+![image](https://user-images.githubusercontent.com/90219892/191474565-e3a12afe-20d7-4a57-9b06-a64e16973cea.png)
+Работа будет начата со второго шаблона
