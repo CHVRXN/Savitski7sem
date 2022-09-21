@@ -75,3 +75,5 @@ https://docs.google.com/document/d/17dkgRFIxEAdOvFsUuCD5TGeWHCqcC7U-Ha5MJ0EfdtI/
 
 - Строка - RowDefinition
 - Столбец - ColumnDefinition
+
+<b>Автоматические размеры</b> - подгоняют размер столбца/строки под его содержимое
