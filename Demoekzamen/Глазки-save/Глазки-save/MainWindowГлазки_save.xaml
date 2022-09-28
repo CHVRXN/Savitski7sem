@@ -1,0 +1,25 @@
+﻿<Window x:Class="Глазки_save.MainWindowГлазки_save"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Глазки_save"
+        mc:Ignorable="d"
+        Title="Глазки-save" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="#FFE9F9"></Border>
+        <Border Grid.Row="1" Background="White"></Border>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72">Глазки-save</TextBlock>
+        <Image Grid.Row="0"  x:Name="Глазки_save_png"  Source="Глазки-save.png" OpacityMask="Aqua" HorizontalAlignment="Left" />
+        <StackPanel>
+            <Button Click="Btn_admin" Height="30" Width="105" HorizontalAlignment="Right" Margin="0,5,15,0">Администратор</Button>
+            <Button Click="Btn_user" Height="30" Width="105" HorizontalAlignment="Right" Margin="0,0,15,0">Пользователь</Button>
+        </StackPanel>
+        
+
+    </Grid>
+</Window>

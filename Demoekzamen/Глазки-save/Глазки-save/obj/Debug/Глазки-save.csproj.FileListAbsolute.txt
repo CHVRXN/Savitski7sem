@@ -1,0 +1,16 @@
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\bin\Debug\Глазки-save.exe.config
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\bin\Debug\Глазки-save.exe
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\bin\Debug\Глазки-save.pdb
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\App.g.cs
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки-save_MarkupCompile.cache
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки-save_MarkupCompile.lref
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки-save.g.resources
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки_save.Properties.Resources.resources
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки-save.csproj.GenerateResource.cache
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки-save.csproj.CoreCompileInputs.cache
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки-save.exe
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки-save.pdb
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\MainWindowГлазки_save.g.cs
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\MainWindowГлазки_save.baml
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\Глазки-save.csproj.AssemblyReference.cache
+C:\Users\Администратор\source\repos\Глазки-save\Глазки-save\obj\Debug\App.baml
