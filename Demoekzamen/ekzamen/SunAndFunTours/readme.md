@@ -33,3 +33,8 @@
 Таблица туров
 
 ![image](https://user-images.githubusercontent.com/90219892/204269370-623aa37b-9354-496d-8c6c-4ff578c2ee71.png)
+
+Диаграмма и структура БД
+
+![image](https://user-images.githubusercontent.com/90219892/204269688-7e3abe2c-7744-4c62-b50c-38c908e6065d.png)
+
