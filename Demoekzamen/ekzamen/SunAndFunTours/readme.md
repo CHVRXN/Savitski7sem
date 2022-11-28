@@ -17,3 +17,15 @@
 Окно менеджера
 
 ![image](https://user-images.githubusercontent.com/90219892/204268313-d4bc020b-114c-451d-b842-d2ca48c30f98.png)
+
+Таблица пользователей
+
+![image](https://user-images.githubusercontent.com/90219892/204268607-7a5a19b4-797c-4b61-9e4b-5671fe81e745.png)
+
+Таблица ролей
+
+![image](https://user-images.githubusercontent.com/90219892/204268717-fb09fe0a-dd48-4a66-a876-9d3fe753f388.png)
+
+ Таблица отелей
+
+![image](https://user-images.githubusercontent.com/90219892/204268780-803c1618-a469-47dc-9d84-02106fe4849d.png)
