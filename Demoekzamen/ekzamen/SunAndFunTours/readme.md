@@ -29,3 +29,7 @@
  Таблица отелей
 
 ![image](https://user-images.githubusercontent.com/90219892/204268780-803c1618-a469-47dc-9d84-02106fe4849d.png)
+
+Таблица туров
+
+![image](https://user-images.githubusercontent.com/90219892/204269370-623aa37b-9354-496d-8c6c-4ff578c2ee71.png)
