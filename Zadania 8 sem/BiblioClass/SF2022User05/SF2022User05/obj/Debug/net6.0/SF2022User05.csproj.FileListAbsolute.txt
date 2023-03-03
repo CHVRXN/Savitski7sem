@@ -1,0 +1,5 @@
+C:\Users\daimo\source\repos\SF2022User05\SF2022User05\obj\Debug\net6.0\SF2022User05.csproj.AssemblyReference.cache
+C:\Users\daimo\source\repos\SF2022User05\SF2022User05\obj\Debug\net6.0\SF2022User05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daimo\source\repos\SF2022User05\SF2022User05\obj\Debug\net6.0\SF2022User05.AssemblyInfoInputs.cache
+C:\Users\daimo\source\repos\SF2022User05\SF2022User05\obj\Debug\net6.0\SF2022User05.AssemblyInfo.cs
+C:\Users\daimo\source\repos\SF2022User05\SF2022User05\obj\Debug\net6.0\SF2022User05.csproj.CoreCompileInputs.cache
