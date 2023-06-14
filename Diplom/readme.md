@@ -21,3 +21,6 @@
 ![image](https://github.com/CHVRXN/Savitski7sem/assets/90219892/294de8c2-a9fe-497a-8a9d-c178c6c1ac57)
 
 Функциональные возможности такие же, если бы мы запускали из среды разработки
+Данные для входа:
+
+![image](https://github.com/CHVRXN/Savitski7sem/assets/90219892/47ce9aeb-b2f6-48ce-a2bb-3198f52450a8)
