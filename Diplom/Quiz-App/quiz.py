@@ -57,6 +57,7 @@ def loginPage(logdata):
 
     def check():
         global global_username
+        global testName
         for a, b, c, d in logdata:
             if b == uname.get() and c == pas.get():
                 global_username = uname.get()
@@ -90,7 +91,7 @@ def adminpage():
 
         # Если поле для поиска пустое, выводим все данные из таблицы
         if not search_name:
-            conn = sqlite3.connect('quiz.db')
+            conn = sqlite3.connect('assets/quiz.db')
             cursor = conn.cursor()
             if selected_quiz == "Все викторины":
                 cursor.execute("SELECT * FROM UserResult")
@@ -100,7 +101,7 @@ def adminpage():
             conn.close()
         else:
             # Получаем данные из таблицы UserResult для указанного имени пользователя и выбранного названия викторины
-            conn = sqlite3.connect('quiz.db')
+            conn = sqlite3.connect('assets/quiz.db')
             cursor = conn.cursor()
             if selected_quiz == "Все викторины":
                 cursor.execute("SELECT * FROM UserResult WHERE UserName=?", (search_name,))
@@ -120,7 +121,7 @@ def adminpage():
             tree.delete(item)  # Удаляем выбранный элемент из Treeview
 
             # Удаление записи из базы данных
-            conn = sqlite3.connect('quiz.db')
+            conn = sqlite3.connect('assets/quiz.db')
             cursor = conn.cursor()
             cursor.execute("DELETE FROM UserResult WHERE ResultID=?", (result_id,))
             conn.commit()
@@ -176,7 +177,7 @@ def adminpage():
     quiz_label = tk.Label(admin, text="Выберите викторину:")
     quiz_label.pack()
 
-    quiz_combobox = ttk.Combobox(admin, values=["Все викторины", "Работа с функциями и модулями", "Основы Python", "Работа с данными"])
+    quiz_combobox = ttk.Combobox(admin, values=["Все викторины", "Работа с функциями и модулями", "Основы языка Python", "Работа с данными в Python"])
     quiz_combobox.current(0)  # Устанавливаем выбор по умолчанию на "Все викторины"
     quiz_combobox.pack()
 
@@ -198,7 +199,7 @@ def adminpage():
     tree.heading("TestName", text="Название викторины")
 
     # Getting data from the UserResult table
-    conn = sqlite3.connect('quiz.db')
+    conn = sqlite3.connect('assets/quiz.db')
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM UserResult")
     rows = cursor.fetchall()
@@ -279,7 +280,7 @@ def signUpPage():
         password = pas.get()
         country = c.get()
 
-        conn = sqlite3.connect('quiz.db')
+        conn = sqlite3.connect('assets/quiz.db')
         create = conn.cursor()
         create.execute('CREATE TABLE IF NOT EXISTS userSignUp(FULLNAME text, USERNAME text,PASSWORD text,COUNTRY text)')
         create.execute("INSERT INTO userSignUp VALUES (?,?,?,?)", (fullname, username, password, country))
@@ -292,7 +293,7 @@ def signUpPage():
         loginPage(z)
 
     def gotoLogin():
-        conn = sqlite3.connect('quiz.db')
+        conn = sqlite3.connect('assets/quiz.db')
         create = conn.cursor()
         conn.commit()
         create.execute('SELECT * FROM userSignUp')
@@ -357,14 +358,14 @@ def menu():
         x = var.get()
         print(x)
         if x == 1:
-            menu.destroy()
+
             easy()
         elif x == 2:
-            menu.destroy()
+
             medium()
 
         elif x == 3:
-            menu.destroy()
+
             difficult()
         else:
             pass
@@ -377,7 +378,22 @@ def menu():
 def easy():
     global e
     e = Tk()
+    global testName
+    testName = "Основы языка Python"
+    # Определение размеров окна
+    window_width = 720
+    window_height = 440
 
+    # Получение размеров экрана
+    screen_width = e.winfo_screenwidth()
+    screen_height = e.winfo_screenheight()
+
+    # Вычисление координат центра экрана
+    x = int((screen_width / 2) - (window_width / 2))
+    y = int((screen_height / 2) - (window_height / 2))
+
+    # Установка положения окна
+    e.geometry(f"{window_width}x{window_height}+{x}+{y}")
     easy_canvas = Canvas(e, width=720, height=440, bg="#101357")
     easy_canvas.pack()
 
@@ -386,7 +402,7 @@ def easy():
 
     def countDown():
         check = 0
-        for k in range(10, 0, -1):
+        for k in range(30, 0, -1):
 
             if k == 1:
                 check = -1
@@ -402,8 +418,7 @@ def easy():
 
     global score
     score = 0
-    global testName
-    testName = "Основы языка Python"
+
 
     easyQ = [
         [
@@ -477,7 +492,8 @@ def easy():
     def display():
         if len(li) == 1:
             e.destroy()
-            showMark(score)
+            showMark(score, testName)
+
         if len(li) == 2:
             nextQuestion.configure(text='End', command=calc)
 
@@ -518,8 +534,9 @@ def easy():
 
 
 def medium():
-    global testName
+
     testName = "Работа с функциями и модулями"
+
     global m
     m = Tk()
     window_width = 720
@@ -599,7 +616,8 @@ def medium():
             entry.delete(0, END)
         else:
             m.destroy()
-            showMark(score)
+            showMark(score, testName)
+
 
     submit = Button(med_frame, command=check_answer, text="Submit")
     submit.pack(pady=10, padx=10, anchor=CENTER)
@@ -611,16 +629,18 @@ def medium():
 
 
 def difficult():
-    global testName
-    testName = "Работа с данными"
+    testName = "Работа с данными в Python"
+
+
 
     def check_order():
+
         if user_order == correct_order:
             success_label.configure(text="Порядок верный! Успех!", fg="green")
-            score_label.configure(text="Счет: 5 баллов")
+            score_label.configure(text="Оценка: 5 баллов")
             global score
             score = 5
-            showMark(score)
+            showMark(score, testName)
         else:
             success_label.configure(text="Неправильный порядок. Попробуйте еще раз.", fg="red")
 
@@ -674,9 +694,22 @@ def difficult():
 
     # Инициализация окна игры
     h = tk.Tk()
-    h.geometry("400x400")
-    h.title("Перетаскивание кода")
+    h.geometry("450x450")
+    h.title("Разместите код в нужном порядке.Порядок: +-*/")
+    # Определение размеров окна
+    window_width = 450
+    window_height = 450
 
+    # Получение размеров экрана
+    screen_width = h.winfo_screenwidth()
+    screen_height = h.winfo_screenheight()
+
+    # Вычисление координат центра экрана
+    x = int((screen_width / 2) - (window_width / 2))
+    y = int((screen_height / 2) - (window_height / 2))
+
+    # Установка положения окна
+    h.geometry(f"{window_width}x{window_height}+{x}+{y}")
     # Создание и расположение виджетов
     code_listbox = tk.Listbox(h, width=50, height=15, selectmode=tk.SINGLE)
     code_listbox.pack()
@@ -698,9 +731,10 @@ def difficult():
     h.mainloop()
 
 
-def showMark(mark):
-    global sh
-    sh = Tk()
+def showMark(mark, testName):
+    sh = tk.Toplevel()
+    sh.title("Результаты викторины")
+
     window_width = 720
     window_height = 440
 
@@ -711,34 +745,32 @@ def showMark(mark):
     y = (screen_height - window_height) // 2
 
     sh.geometry(f"{window_width}x{window_height}+{x}+{y}")
-    show_canvas = Canvas(sh, width=720, height=440, bg="#101357")
+    show_canvas = tk.Canvas(sh, width=720, height=440, bg="#101357")
     show_canvas.pack()
 
-    show_frame = Frame(show_canvas, bg="white")
+    show_frame = tk.Frame(show_canvas, bg="white")
     show_frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
 
     st = f"{global_username}, Ваша оценка {mark}"
 
-    title_label = Label(show_frame, text="Результаты викторины", font=("Arial", 20), bg="white")
+    title_label = tk.Label(show_frame, text="Результаты викторины", font=("Arial", 20), bg="white")
     title_label.pack(pady=20)
 
-    score_label = Label(show_frame, text=st, font=("Arial", 16), bg="white")
+    score_label = tk.Label(show_frame, text=st, font=("Arial", 16), bg="white")
     score_label.pack(pady=20)
 
-    if mark >= 4:
-        image_path = "success.png"  # Путь к изображению для количества очков >= 4
-    else:
-        image_path = "unsucces.png"  # Путь к изображению для количества очков < 4
+    image_path = "succecimage.png" if mark >= 4 else "unsucces.png"
+    image = tk.PhotoImage(file=image_path)
 
-    image = PhotoImage(file=image_path)
-    image_label = Label(show_frame, image=image, bg="white")
+    image_label = tk.Label(show_frame, image=image, bg="white")
+    image_label.image = image  # Сохраняем ссылку на изображение, чтобы избежать ошибки
     image_label.pack(pady=20)
 
-    conn = sqlite3.connect('quiz.db')
+    conn = sqlite3.connect('assets/quiz.db')
     cursor = conn.cursor()
 
     cursor.execute('''CREATE TABLE IF NOT EXISTS UserResult
-                     (UserName TEXT, Score INT, TestName)''')
+                    (UserName TEXT, Score INT, TestName)''')
 
     cursor.execute("INSERT INTO UserResult (UserName, Score, TestName) VALUES (?, ?, ?)",
                    (global_username, mark, testName))
