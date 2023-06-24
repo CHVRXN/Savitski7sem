@@ -1,4 +1,4 @@
-('C:\\Users\\daimo\\Desktop\\xfhdfh\\Savitski7sem\\Diplom\\Quiz-App\\build\\quiz\\PYZ-00.pyz',
+('C:\\Users\\daimo\\Desktop\\savicapp\\Savitski7sem\\Diplom\\Quiz-App\\build\\quiz\\PYZ-00.pyz',
  [('PIL',
    'c:\\users\\daimo\\desktop\\finalquiz\\simple_quiz_app_in_python_with_source_code '
    '(1)\\venv\\Lib\\site-packages\\PIL\\__init__.py',
