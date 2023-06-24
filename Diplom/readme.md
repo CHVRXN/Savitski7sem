@@ -7,3 +7,7 @@
 У администратора так же имеется возможность просмотреть данные каждого участника викторины - его логин, пароль, имя пользователя и название группы. 
 ![image](https://github.com/CHVRXN/Savitski7sem/assets/90219892/15b67adc-5a62-47b6-bd80-a6fdf703b01e)
 ![image](https://github.com/CHVRXN/Savitski7sem/assets/90219892/816e80db-229e-4f6a-a71a-30d0eb1c851c)
+# Данные для входа
+
+
+![image](https://github.com/CHVRXN/Savitski7sem/assets/90219892/7d11a18a-4cd6-4c3a-990a-6aac3c216a91)
